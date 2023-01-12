@@ -1,0 +1,43 @@
+.footer {
+    width: 100%;
+    background: var(--text-color);
+}
+
+.footer_grid {
+    display: grid;
+    grid-template-columns: repeat(1, 3fr);
+}
+
+.footer_logo {
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_logo img {
+    height: 100px;
+}
+
+.companies {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(1, 3fr);
+}
+
+.companies > p {
+    color: #FFF;
+    text-align: center;
+}
+
+.companies_images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.companies_images img {
+    margin-top: 1rem;
+    height: 50px;
+    margin-bottom: 2rem;
+}

@@ -1,0 +1,155 @@
+/* ============================================================================ */
+/*          STYLE FOR INDEX.JSX
+/* ============================================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+/* ----------------------------------------------------------------------------
+ *          ROOT VARIABLES
+ * --------------------------------------------------------------------------- */
+
+:root {
+    
+/* ---------- Colors ---------- */
+--nav-color: rgb(253, 253, 253);
+--body-color: rgb(239, 239, 250);
+--container-color: rgb(232, 232, 232);
+--title-color: rgb(69, 69, 69);
+--text-color: rgb(33, 33, 33);
+--icon-color: rgb(48, 48, 48);
+
+/* --- Font and typography ----- */
+--body-font: "Montserrat", sans-serif;
+
+/* --- 0.5rem = 8px | 1rem = 16px ... --- */
+--big-font-size: 3.5rem;
+--h1-font-size: 2.25rem;
+--h2-font-size: 1.5rem;
+--h3-font-size: 1.25rem;
+--normal-font-size: 1rem;
+--small-font-size: 0.875rem;
+--smaller-font-size: 0.813rem;
+--tiny-font-size: 0.625rem;
+
+/* --- Font weight */
+--font-normal: 400;
+--font-medium: 500;
+--font-semi-bold: 600;
+--font-bold: 700;
+--font-bolder: 800;
+--font-extra-bold: 900;
+
+/* ----- Z-index ----- */
+--z-tooltip: 10;
+--z-fixed: 100;
+--z-modal: 1000;
+
+}
+
+/* --- Responsive typography --- */
+@media screen and (max-width: 992px) {
+    :root {
+        --big-font-size: 2.75rem;
+        --h1-font-size: 1.5rem;
+        --h2-font-size: 1.25rem;
+        --h3-font-size: 1rem;
+        --normal-font-size: 0.938rem;
+        --small-font-size: 0.813rem;
+        --smaller-font-size: 0.75rem;
+    }
+}
+
+/* ----------------------------------------------------------------------------
+ *          COMMON
+ * --------------------------------------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	background-color: #F4F4F4;
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: var(--title-color);
+    border-radius: 1rem;
+}
+
+body,
+button,
+input,
+textarea {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
+body {
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+h1, h2, h3 {
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+/* ----------------------------------------------------------------------------
+ *          LAYOUT
+ * --------------------------------------------------------------------------- */
+
+.container {
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ============================================================================ */
+/*          RESPONSIVE SCREENS - TEMPLATES
+/* ============================================================================ */
+
+/* --- TV/XL screen --- */
+@media screen and (min-width: 1201px){}
+
+/* --- DESKTOP screen --- */
+@media screen and (max-width: 1200px){}
+
+/* --- LAPTOP screen --- */
+@media screen and (max-width: 1023px){}
+
+/* --- TABLET screen --- */
+@media screen and (max-width: 768px){}
+
+/* --- MOBILE screen --- */
+@media screen and (max-width:480px){}
+
+/* --- For smaller devices --- */
+@media screen and (max-width: 350px){}
